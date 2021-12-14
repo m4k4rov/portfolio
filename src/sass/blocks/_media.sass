@@ -1,0 +1,156 @@
+@media (max-width: 1320px)
+  .sidepanel
+    display: none
+
+
+@media (max-width: 1200px)
+  .container
+    max-width: 960px
+  .about
+    padding: 40px 0
+    .container
+      padding-right: 0
+  .work
+    &__item
+      &:nth-child(7)
+        order: 1
+      &:last-child
+        order: 2
+  .contacts
+    min-height: 100px
+    padding: 0 0 40px
+    .container
+      padding: 0 10px
+    .btn
+      font-size: 13px
+
+
+@media (max-width: 992px)
+  .container
+      max-width: 720px
+  .about
+    .container
+      padding-right: 0
+      column-gap: 15px
+      grid-template-columns: 1fr
+      justify-items: center
+    &__img
+      width: 400px
+      height: 480px
+  .resume
+    min-height: 100px
+    padding-bottom: 20px
+    .container
+      padding: 10px
+  .work
+    &__item
+      &:nth-child(7)
+        order: 1
+  .contacts
+    .container
+      grid-template-columns: 1fr
+    &__img
+      display: none
+
+@media (max-width: 768px)
+  .container
+    max-width: 576px
+  .title
+    &_fs48
+      font-size: 26px
+  .promo
+    &__title
+      width: 300px
+      line-height: 38px
+  .about
+    &__img
+      margin-bottom: 46px
+  .resume
+    &__wrapper
+      grid-template-columns: 1fr
+      margin-top: 40px
+
+
+@media (max-width: 576px)
+  .container
+    padding: 0 10px
+    width: 100%
+
+  .hamburger
+    right: 20px
+  .promo
+    &__video
+      object-position: 30% 50%
+    &__btns
+      margin-top: 70px
+  .menu
+    &__block
+      width: 250px
+      padding-left: 20px
+  .about
+    .container
+      padding: 0 10px
+    &__img
+      width: 300px
+      height: 340px
+    &__me
+      grid-template-columns: 1fr
+    &__text
+      grid-column: 1/2
+    &__title
+      font-size: 27px
+  .resume
+    &__subtitle
+      font-size: 27px
+      &::before
+        bottom: -10px
+    &__item_title
+      font-size: 12px
+  .skills
+    padding-bottom: 40px
+    &__work
+      margin-top: 42px
+    &__subtitle
+      font-size: 20px
+      &::before
+        bottom: -10px
+    &__me
+      margin-top: 40px
+      grid-template-columns: 1fr
+      padding: 0 10px
+  .work
+    &__subtitle
+      font-size: 28px
+      &::before
+        bottom: -10px
+    &__wrapper
+      margin-top: 40px
+    &__item
+      &:nth-child(5)
+        grid-row: span 1
+        img
+          object-position: top
+      &:nth-child(7)
+        grid-column: span 1
+        img
+          object-position: left
+  .contacts
+    &__triggers
+      grid-template-columns: 270px
+      justify-content: center
+      grid-column: span 1
+    &__policy
+      order: -1
+      margin-bottom: 10px
+      width: 200px
+      justify-self: center
+    &__form
+      grid-template-columns: 1fr
+    &__textarea
+      grid-column: span 1
+    &__title
+      font-size: 24px
+    & .title_fs14
+      font-size: 13px
+    &__social
+      margin: 10px 0

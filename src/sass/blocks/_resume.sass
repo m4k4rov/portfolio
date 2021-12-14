@@ -1,0 +1,95 @@
+.resume
+    min-height: 680px
+    padding-bottom: 120px
+    .container
+        padding: 0 70px
+    &__title
+        text-align: center
+        position: relative
+        +before_circle
+        &::before
+            left: 50%
+            transform: translateX(-50%)
+    &__subtitle
+        text-align: center
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 60px
+            height: 3px
+            background-color: $main-color
+            bottom: -25px
+            left: calc( 50% - 30px )
+    &__wrapper
+        margin-top: 85px
+        display: grid
+        column-gap: 30px
+        grid-template-columns: repeat(2, minmax(auto, 425px))
+        justify-content: space-between
+    &__column
+        &_title
+            position: relative
+            padding-left: 43px
+            margin-bottom: 0
+            &::before
+                content: ''
+                position: absolute
+                width: 15px
+                height: 15px
+                background: $main-color
+                border-radius: 50%
+                left: -7px
+                top: 50%
+                transform: translateY(-50%)
+        ul
+            list-style: none
+            li
+                position: relative
+                &::after
+                    content: ''
+                    width: 1px
+                    height: calc(100% + 8px)
+                    position: absolute
+                    top: -8px
+                    left: 0
+                    background-color: #000
+    &__item
+        padding-left: 43px
+        &_head
+            display: flex
+            align-items: center
+            gap: 20px
+            padding-top: 45px
+        &_icon
+            position: relative
+            width: 36px
+            height: 36px
+            background-color: $main-color
+            flex-shrink: 0
+            border-radius: 50%
+            &::before
+                content: ''
+                position: absolute
+                width: 43px
+                height: 1px
+                left: -43px
+                background-color: #000
+                top: 50%
+            img
+                position: absolute
+                top: 40%
+                left: 40%
+        &_location
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
+        &_title
+            margin-bottom: 0
+        &_body
+            margin-top: 12px
+            font-weight: 500
+            font-size: 12px
+            line-height: 18px
+            color: #000000
