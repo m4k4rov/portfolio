@@ -47,7 +47,7 @@ sublineList.forEach((item, index) => {
     item.style.width = percentList[index].textContent;
 });
 
-
+//Текст из формы в письмо
 const form = document.querySelector('form');
 form.addEventListener('submit', function(ev) {
     ev.preventDefault();
@@ -57,6 +57,7 @@ form.addEventListener('submit', function(ev) {
     document.location.href = `mailto:makarov.pav.al@gmail.com?subject=Web-разработка&body=${text}%0A${name}%20${email}&amp`;
 }, false);
 
+//Движение элементов относительно указателя мыши и наклона девайса
 const promo = document.querySelector('.promo');
 promo.addEventListener('mousemove', (ev) => {
     ev.target.querySelectorAll('.layer').forEach(layer => {
@@ -75,11 +76,13 @@ window.addEventListener('deviceorientation', function(ev) {
     })
 });
 
+//Параллакс для изображений
 jarallax(document.querySelectorAll('.jarallax'), {
     speed: 0.5,
     type: "scroll",
 });
 
+//Появление элементов в зоне видимости
 let observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
         entry.isIntersecting ? entry.target.classList.add('active') : entry.target.classList.remove('active');
